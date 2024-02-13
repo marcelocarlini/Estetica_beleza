@@ -17,6 +17,8 @@ i{
 .header-icons{
     display: flex;
     gap:15px;
+    font-size: 8px;
+    margin-bottom: 25px;
 }
 .header-icons a:hover{
     i{
@@ -45,14 +47,15 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 700px;
-    margin-bottom: 70px;
+    /* width: 800px; */
+    margin-bottom: 50px;
+    border: 1px;
 }
 //Responsividade
 @media screen and (max-width:768px) {
     .header-logo img{
-        width: 100%;
-        max-width: 450px;
+        /* width: 100%; */
+        max-width: 100%;
         
     }
 }
