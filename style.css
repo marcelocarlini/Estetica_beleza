@@ -19,7 +19,7 @@ header {
 }
 
 i {
-  color: #BFBC8A;
+  color: #8C846C;
 }
 
 .header-icons {
@@ -35,10 +35,10 @@ i {
 }
 
 .header-button {
-  border: 2px solid #BFBC8A;
+  border: 1px solid #8C846C;
   padding: 8px 64px;
   border-radius: 14px;
-  color: #A69F7C;
+  color: #8C846C;
   background-color: transparent;
   transition: background-color 0.8s;
   white-space: nowrap;
@@ -56,15 +56,18 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 800px; */
+  max-width: 940px;
+  width: 100%;
   margin-bottom: 50px;
   border: 1px;
 }
 
 @media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+  }
   .header-logo img {
-    /* width: 100%; */
-    max-width: 100%;
+    width: 400px;
   }
 }
 @keyframes paraCima {
@@ -73,6 +76,97 @@ i {
   }
   to {
     transform: translateY(-8px) scale(1.1);
+  }
+}
+/* .bg-home{
+    position: relative;
+}
+.bg-home::before{
+    display: block;
+    position: absolute;
+    background-image: url(../img/backgorund.png);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+} */
+.hero {
+  color: #8C846C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  padding: 10px;
+}
+.hero p {
+  text-align: center;
+  margin: 30px 0;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 12px;
+  }
+}
+.about {
+  background-color: #A6786D;
+  overflow: hidden;
+  color: #EDF2EB;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 34px 14px;
+}
+.about-content img {
+  max-width: 450px;
+}
+
+.about-content div {
+  flex: 1;
+  max-width: 450px;
+}
+
+.about-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.about-description p {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-content img {
+    max-width: 250px;
+  }
+  .about-description h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .about-description p {
+    font-size: 12px;
+    line-height: 150%;
   }
 }
 body {
