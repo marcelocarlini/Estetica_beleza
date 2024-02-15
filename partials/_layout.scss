@@ -1,20 +1,20 @@
-/* .bg-home{
+.bg-home{
     position: relative;
 }
-.bg-home::before{
+.bg-home:before{
+    content: '';
     display: block;
     position: absolute;
-    background-image: url(../img/backgorund.png);
-    left: 0;
-    top: 0;
+    background-image: url(../img/background.png);
     width: 100%;
     height: 100%;
+    left: 0;
+    right: 0;
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    opacity: 0.9;
-} */
+    opacity: 0.2;
+}
 
 .hero{
     color: $cinza;
@@ -72,12 +72,14 @@ screen and (max-width:768px){
 }
 
 .about-description{
+    
+    
     h2{
         font-size: 38px;
         margin-bottom: 24px;
     }
     p{
-        font-size: 12px;
+        /* font-size: 14px; */
         line-height: 150%;
     }
 }
@@ -102,3 +104,95 @@ screen and (max-width:768px){
 }
     
 }
+
+.services{
+    background-color: $branco;
+    color: $rosa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 14px 34px 14px;
+    max-width: 1500px;
+}
+.services-content h2{
+
+    font-size: 38px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 34px;
+    text-align: center;
+    max-width: 900px;
+}
+.services-estetica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+} 
+.services-quadros{
+    display: flex;
+    flex-direction: column;
+    background-color: $cinza-light;
+    color: $cinza;
+    border-radius: 3px;
+    box-shadow: 0px -1px 17px -4px $rosa ;
+    overflow: hidden;
+    
+    
+    img{
+        width: 100%;
+        max-width: 354px;
+        transition: transform 0.25s;
+    }
+}
+.services-quadros img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+.services-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: $branco;
+    z-index: 2;
+    
+}
+.services-info button{
+    color: $branco;
+    background-color: $cinza-light;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+
+}
+
+@media screen and (max-width:768px){
+    .services-estetica{
+        flex-direction: column;
+        img{
+            max-width: 250px;
+        }
+    }
+    .services-content{
+        h2{
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 150%;
+    }
+    }
+    
+}
+
+    
+
